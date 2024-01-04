@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chatapp/presentation/misc/constants.dart';
 
 class MyButton extends StatelessWidget {
   const MyButton({super.key, required this.text, this.onTap});
@@ -11,7 +12,7 @@ class MyButton extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: primary,
           borderRadius: BorderRadius.circular(5),
         ),
         child: Center(

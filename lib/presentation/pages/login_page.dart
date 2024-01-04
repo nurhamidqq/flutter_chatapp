@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chatapp/presentation/extentions/build_context_extention.dart';
+import 'package:flutter_chatapp/presentation/misc/constants.dart';
 import 'package:flutter_chatapp/presentation/misc/methods.dart';
 import 'package:flutter_chatapp/presentation/providers/router/router_provider.dart';
 import 'package:flutter_chatapp/presentation/providers/user_data/user_data_provider.dart';
@@ -34,10 +35,10 @@ class LoginPage extends ConsumerWidget {
           child: ListView(
             children: [
               verticalSpace(50),
-              Icon(
-                Icons.message,
+              const Icon(
+                Icons.mark_unread_chat_alt_outlined,
                 size: 80,
-                color: Colors.grey[800],
+                color: primary,
               ),
               const Text(
                 "Welcome back you've been missed!",

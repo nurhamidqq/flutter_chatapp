@@ -42,4 +42,14 @@ class FirebaseUserRepository implements UserRepository {
       return const Result.failed('Failed to create user');
     }
   }
+
+  @override
+  Stream<List<User>?> getUsers({required String uid}) async* {
+    var snapshot = _firebaseFireStore.collection('users').snapshots();
+
+    yield* snapshot.map((event) => event.docs
+        .where((element) => element.id != uid)
+        .map((e) => User.fromJson(e.data()))
+        .toList());
+  }
 }

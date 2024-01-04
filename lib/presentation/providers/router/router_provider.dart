@@ -1,4 +1,6 @@
-import 'package:flutter_chatapp/presentation/pages/home_page.dart';
+import 'package:flutter_chatapp/domain/entities/user.dart';
+import 'package:flutter_chatapp/presentation/pages/chat_page/chat_page.dart';
+import 'package:flutter_chatapp/presentation/pages/home_page/home_page.dart';
 import 'package:flutter_chatapp/presentation/pages/login_page.dart';
 import 'package:flutter_chatapp/presentation/pages/register_page.dart';
 import 'package:go_router/go_router.dart';
@@ -23,6 +25,11 @@ Raw<GoRouter> router(RouterRef ref) => GoRouter(
           path: '/home',
           name: 'home',
           builder: (context, state) => const HomePage(),
+        ),
+        GoRoute(
+          path: '/chat',
+          name: 'chat',
+          builder: (context, state) => ChatPage(state.extra as (User, User)),
         ),
       ],
       initialLocation: '/login',

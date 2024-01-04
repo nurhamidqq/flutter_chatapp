@@ -1,24 +1,24 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'user_data_provider.dart';
+part of 'get_message_provider.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$userDataHash() => r'703e4ddbec2813e2ec17a042b510b6aec024aa92';
+String _$getMessageHash() => r'4d52881e391296b091d8bbd0f6e791206ccd61c6';
 
-/// See also [UserData].
-@ProviderFor(UserData)
-final userDataProvider = AsyncNotifierProvider<UserData, User?>.internal(
-  UserData.new,
-  name: r'userDataProvider',
+/// See also [getMessage].
+@ProviderFor(getMessage)
+final getMessageProvider = AutoDisposeProvider<GetMessage>.internal(
+  getMessage,
+  name: r'getMessageProvider',
   debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$userDataHash,
+      const bool.fromEnvironment('dart.vm.product') ? null : _$getMessageHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$UserData = AsyncNotifier<User?>;
+typedef GetMessageRef = AutoDisposeProviderRef<GetMessage>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

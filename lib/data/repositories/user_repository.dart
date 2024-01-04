@@ -8,4 +8,5 @@ abstract interface class UserRepository {
     required String email,
     required String name,
   });
+  Stream<List<User>?> getUsers({required String uid});
 }

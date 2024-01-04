@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 Map<double, SizedBox> _verticalSpaces = {};
@@ -22,3 +24,8 @@ SizedBox horizontalSpace(double width) {
 
   return _horizontalSpaces[width]!;
 }
+
+Color randomColorPrimary() =>
+    Colors.primaries[Random().nextInt(Colors.primaries.length)];
+Color randomColorAccent() =>
+    Colors.primaries[Random().nextInt(Colors.accents.length)];

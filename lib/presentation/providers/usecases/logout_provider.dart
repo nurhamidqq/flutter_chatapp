@@ -6,4 +6,4 @@ part 'logout_provider.g.dart';
 
 @riverpod
 Logout logout(LogoutRef ref) =>
-    Logout(authentication: ref.watch(authRepositoryProvider));
+    Logout(authRepository: ref.watch(authRepositoryProvider));

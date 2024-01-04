@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chatapp/firebase_options.dart';
+import 'package:flutter_chatapp/presentation/misc/constants.dart';
 import 'package:flutter_chatapp/presentation/providers/router/router_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -20,7 +21,7 @@ class MyApp extends ConsumerWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: primary),
         useMaterial3: true,
         textTheme: TextTheme(
           bodyMedium: GoogleFonts.poppins(),
